@@ -1,11 +1,43 @@
 <!DOCTYPE html>
+  <!--
+    ・ドキュメントタイプ宣言
+      https://www.tohoho-web.com/html/doctype.htm
+    ・"!DOCTYPE"が大文字なのはXHTML化の名残。
+      XHTML化：XMLに基づいた厳密なHTML。開発者の負担軽減で廃止→HTML5へ。
+      →【厳密な構文より、シャープに書くことで可読性を上げていくべき？】
+      https://ja.m.wikibooks.org/wiki/HTML/XHTML1.0
+  -->
 <html lang="ja">
-  
+  <!-- 
+    要素内で使用されている言語を指定。
+    https://qiita.com/ryichk/items/70e325f69002ddc20aed
+  -->
 <head>
   <meta charset="UTF-8">
+  <!--
+    日本語の文字コード指定。（マルチバイト文字）
+    https://creatorquest.jp/lessons/html/meta-character/
+  -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+      name="viewport"	ビューポートの設定を行うことを示す
+      content="..."	ビューポートの具体的な設定内容
+      width=device-width	表示幅を**端末の画面幅（デバイス幅）**に合わせる。(CSSピクセル数指定可)
+      initial-scale=1	ページを最初に読み込んだときの表示倍率を **1倍（ズームなし）**にする（0.1～10、d:1）
+      https://developer.mozilla.org/ja/docs/Web/HTML/Guides/Viewport_meta_element
+      https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Attributes/content
+      https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/meta/name
+    -->
   <title>サンプルWebサイト</title>
+    <!--
+      ページタブ・題名バーの表示。TEXTのみ。
+      https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/title
+    -->
   <link rel="stylesheet" href="style.css">
+    <!--
+      
+      https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements/link
+    -->
 </head>
 
 <body>
